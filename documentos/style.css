@@ -32,3 +32,8 @@ header{
     }
 
 }
+img{
+    display: flex;
+    
+    max-width: 100%;
+}
