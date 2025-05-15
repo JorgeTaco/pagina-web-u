@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logomini.jpg" type="x-icon">
+</head>
+<body style="background-image: url('img/logomini.jpg'); background-size: 100px;background-position: center;background-attachment:fixed; background-repeat: no-repeat; width: 100;">
+    <header>
+        <h1 align ="center" "><b>*Marca*</b></h1>
+        <h1 align="center"><a href="index.html "style="color: white ; text-decoration: none;"> <b>Ciencia y tecnología al alcance de tus manos</b> </a></h1>
+        <img src="img/logo.jpg" ="Logo creado por mi tan buena gente cami^^" width="100">
+    </header>
+    <style>
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .item {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.2
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .item p {
+            margin: 0;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head> 
+<body>
+    <!-- Recordatorio: crear imagenes y modificar carpeta img y crear categorias -->
+
+    <div class="galeria">
+        <a href="c1.html" style=" text-decoration: none;">
+            <div class="item"> 
+                <img src="https://i.pinimg.com/originals/20/16/45/201645bdb77d9440ebf7f4387b4ef0c0.gif" alt="Categoría 1">
+                <p>Hardware</p>
+            </div>
+        </a>
+        <a href="c2.html" style="text-decoration: none;">
+            <div class="item">
+                <img src="https://argataca.com/wp-content/uploads/2024/01/ai-gif.gif?w=800" alt="Categoría 2">
+                <p>Inteligencia Artificial</p>
+            </div>
+        </a>
+        <div class="item">
+            <img src="https://s3-us-west-2.amazonaws.com/misionadmision-informacion/miscelanea/contenido-restringido-por-evaluacion-diagnostica.gif" alt="Categoría 3">
+            <p>Software Revolucionario</p>
+        </div>
+        <!-- Puedes seguir duplicando este bloque -->
+    </div>
+    
+</body>
+</html>

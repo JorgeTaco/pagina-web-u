@@ -1,0 +1,48 @@
+/* Estilos básicos (opcional) */
+body {
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0;
+    line-height: 1.6;
+    background-color:beige;
+    
+    
+}
+p{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.4; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px; 
+    border-radius: 15px; 
+}
+h1{
+    color: white;
+}
+header{
+    display:flex;
+    background-color: blueviolet;
+    border-radius:2%;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    padding: 3px 5px;
+
+}
+@media(max-width:500px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+
+}
+img{
+    display:flex;
+    
+    max-width: 100%;
+
+}
