@@ -6,22 +6,87 @@
     <title>Sciencetech</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/logomini.jpg" type="x-icon">
+
+    <style>
+        header {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+    
+            /* Logo clickeable */
+        .logo {
+            width: 100px;
+            cursor: pointer;
+        }
+    
+            /* Botón de explorar */
+        .menu-container {
+            display: inline-block;
+            position: relative;
+        }
+    
+        .menu-boton {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    
+            /* Menú desplegable */
+        .menu-opciones {
+            display: none;
+            position: absolute;
+            background-color: #1a1a1a;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+            z-index: 1;
+            right: 0;
+        }
+    
+        .menu-opciones a {
+            color: gainsboro;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+    
+        .menu-opciones a:hover {
+            background-color: #333;
+        }
+    
+        .menu-container:hover .menu-opciones {
+            display: block;
+        }
+    </style>
+
 </head>
 
 <body style="background-image: url('img/logomini.jpg'); background-size: 100px;background-position: center;background-attachment:fixed; background-repeat: no-repeat; width: 100;">
 
     <header>
-        <h1 align ="center" "><b>*Marca*</b></h1>
-        <h1 align="center"><a href="index.html "style="color: white ; text-decoration: none;"> <b>Ciencia y tecnología al alcance de tus manos</b> </a></h1>
-        <img src="img/logo.jpg" ="Logo creado por mi tan buena gente cami^^" width="100">
+        <!-- Logo con link -->
+        <a href="index.html">
+            <img src="img/logo.jpg" alt="Logo creado por Cami^^" class="logo">
+        </a>
+        <h1>*Marca*</h1>
+        <!-- Botón y menú desplegable -->
+        <div class="menu-container">
+            <button class="menu-boton">Explorar</button>
+            <div class="menu-opciones">
+                <a href="c1.html">Hardware</a>
+                <a href="c2.html">Inteligencia Artificial</a>
+                <a href="c3.html">Software Revolucionario</a>
+                <a href="https://elpais.com/ciencia/">Noticias Científicas</a>
+                <a href="https://www.wired.com/category/science/">Wired Science</a>
+            </div>
+        </div>
     </header>
     
-    <h2>¿Qué buscamos dentro de *Marca*?</h2>
-    <p>Dentro de *Marca* encontrarás información muy importante acerca de cómo la ciencia y la tecnologia yendo de la mano hacen avances gigantezcos que no solo ayudan al mundo, revolucionan toda una era y día a día nos llevan hacia un futuro mas que prometedor, a la vez hacemos que esta información sea mas digerible y pueda estar al alcance de una audiencia mas grande, pues no necesitas ningun titulo para informarte ¡El poder de informarte está en tus manos! y nosotros te ayudaremos facilitando la busqueda.</p>
     
-    <div align="center">
-        <img src="https://media.istockphoto.com/id/157354589/es/foto/peri%C3%B3dico-de-perro.jpg?s=612x612&w=0&k=20&c=AHkKVzIJWLaKRz-_aB0fkS9XHGL_U6R8oBVmzOl6-oE="alt="Perrito leyendo">
-    </div>
    
 
    
@@ -59,7 +124,7 @@
                 <img src="https://pa1.aminoapps.com/6141/03acfb0978178447c52772d0efd1c03a4a42543b_00.gif" style="width: 80px; height: 80px; object-fit: cover; border-radius: 10px; margin-right: 15px;">
                 <div>
                     Quieres saber mas acerca de *marca*?:  
-                    <a href="categorias.html">Nuestro mundo de categorías</a>
+                    <a href="categorias.html" target="_blank" class="enlace-deco">Nuestro mundo de categorías</a>
                 </div>
             </div>
         
@@ -68,7 +133,7 @@
                 <img src="https://media1.tenor.com/m/sPOvztbEFrkAAAAC/pantheon-maddie.gif" style="width: 80px; height: 80px; object-fit: cover; border-radius: 10px; margin-right: 15px;">
                 <div>
                     Apoya nuestra causa escuchando la playlist:  
-                    <a href="https://open.spotify.com/playlist/2EMY2SKarJndQigRspZAYK?si=5fe0672166ba42d8" target="_blank" style="color: #00E5FF; text-decoration: none;">Músicas chidas</a>
+                    <a href="https://open.spotify.com/playlist/2EMY2SKarJndQigRspZAYK?si=5fe0672166ba42d8" target="_blank" class="enlace-deco">Músicas chidas</a>
                 </div>
             </div>
 
@@ -77,7 +142,7 @@
             <img src="https://univercimas.com/wp-content/uploads/2021/04/Universidad-Tecnica-de-Cotopaxi-UTC.png" style="width: 80px; height: 80px; object-fit: cover; border-radius: 10px; margin-right: 15px;">
             <div>
                 Página web de la universidad:  
-                <a href="https://www.utc.edu.ec/" target="_blank" style="color: #00E5FF; text-decoration: none;">Universidad Técnica de Cotopaxi</a>
+                <a href="https://www.utc.edu.ec/" target="_blank" class="enlace-deco">Universidad Técnica de Cotopaxi</a>
             </div>
             </div>
         
@@ -86,7 +151,7 @@
             <img src="https://ed.utc.edu.ec/wp-content/uploads/2025/03/EdUTC-gris.png" style="width: 80px; height: 80px; object-fit: contain; border-radius: 10px; margin-right: 15px;">
             <div>
                 Entorno Virtual UTC:  
-                <a href="https://ed-aula.utc.edu.ec/" target="_blank" style="color: #00E5FF; text-decoration: none;">EdUTC</a>
+                <a href="https://ed-aula.utc.edu.ec/" target="_blank" class="enlace-deco">EdUTC</a>
             </div>
             </div>
         
@@ -113,7 +178,64 @@
             </div>
         </div>
     </div>
-    <hr>
+
+  <!-- Dar estilo a los links-->
+    <style>
+        .enlace-deco {
+            position: relative;
+            color: gainsboro;
+            text-decoration: none;
+        }
+        
+        .enlace-deco::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 1px;
+            background-image: repeating-linear-gradient(to right, gainsboro 0 4px, transparent 4px 8px);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .enlace-deco:hover::after {
+            opacity: 1;
+        }
+        </style>
+        
+    <div style="background-color: black; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
     
+        <!-- Contenedor izquierdo: logo, título y texto -->
+        <div style="flex: 1; min-width: 250px;">
+            <div style="text-align: center;">
+                <img src="img/logomini.jpg" alt="Logo" style="height: 100px; display: block; margin: 0 auto 10px auto;">
+                <h2 style="color: white;">¿Qué buscamos dentro de <em>Marca</em>?</h2>
+            </div>
+            <p style="color: gainsboro; text-align: justify;">
+                <em>Marca</em> da a conocer información muy importante acerca de nuevos hitos historicos en el dia a dia que ayudan a la humanidad.
+            </p>
+        </div>
+    
+        <!-- Contenedor derecho: imagen -->
+        <div style="flex: 1; min-width: 250px; text-align: center;">
+            <h2 style="color: white;">Ciencia y tecnologia al alcance de tus manos</h2>
+            <!-- <img src="https://media.istockphoto.com/id/157354589/es/foto/peri%C3%B3dico-de-perro.jpg?s=612x612&w=0&k=20&c=AHkKVzIJWLaKRz-_aB0fkS9XHGL_U6R8oBVmzOl6-oE=" alt="Perrito leyendo" style="width: 100%; max-width: 300px; border-radius: 10px;"> -->
+        </div>
+        <div style="flex: 1; min-width: 250px;text-align: center;">
+            <p style="color: gainsboro; text-align: center;">
+                <a href="index.html" class="enlace-deco">Home</a>
+            </p>
+        </div>
+        <div style="flex: 1; min-width: 250px;text-align: center;">
+            <p style="color: gainsboro; text-align: center;">
+                <a href="c1.html" class="enlace-deco">Hardware</a><br>
+                <a href="c2.html" class="enlace-deco">Inteligencia Artificial</a><br>
+                <a href="c3.html" class="enlace-deco">Software Revolucionario</a>
+            </p>
+        </div>
+    
+    </div>
+    <hr>
     <h6 align="right">© 2025 Sciencetech. All rights reserved.               Los terminos y condiciones aplican por separado</h6>
 </body>
