@@ -75,6 +75,7 @@
         <div class="menu-container">
             <button class="menu-boton">Explorar</button>
             <div class="menu-opciones">
+                <a href="categorias.html">Sobre nosotros</a>
                 <a href="c1.html">Hardware</a>
                 <a href="c2.html">Inteligencia Artificial</a>
                 <a href="c3.html">Software Revolucionario</a>
@@ -94,5 +95,63 @@
         <!-- <img src="https://www.experimenta.es/wp-content/uploads/2019/02/neuralink-logo-800x600.jpg" > -->
         </div>
     </div>
+    <style>
+        .enlace-deco {
+            position: relative;
+            color: gainsboro;
+            text-decoration: none;
+        }
+        
+        .enlace-deco::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 1px;
+            background-image: repeating-linear-gradient(to right, gainsboro 0 4px, transparent 4px 8px);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .enlace-deco:hover::after {
+            opacity: 1;
+        }
+        </style>
+             
+             <div style="background-color: black; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+    
+                <!-- Contenedor izquierdo: logo, título y texto -->
+                <div style="flex: 1; min-width: 250px;">
+                    <div style="text-align: center;">
+                        <img src="img/logomini.jpg" alt="Logo" style="height: 100px; display: block; margin: 0 auto 10px auto;">
+                        <h2 style="color: white;">¿Qué buscamos dentro de <em>Cienfuture</em>?</h2>
+                    </div>
+                    <p style="color: gainsboro; text-align: justify;">
+                        <em>Cienfuture</em> da a conocer información muy importante acerca de nuevos hitos historicos en el dia a dia que ayudan a la humanidad.
+                    </p>
+                </div>
+            
+                <!-- Contenedor derecho: imagen -->
+                <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <h2 style="color: white;">Ciencia y tecnologia al alcance de tus manos</h2>
+                    <!-- <img src="https://media.istockphoto.com/id/157354589/es/foto/peri%C3%B3dico-de-perro.jpg?s=612x612&w=0&k=20&c=AHkKVzIJWLaKRz-_aB0fkS9XHGL_U6R8oBVmzOl6-oE=" alt="Perrito leyendo" style="width: 100%; max-width: 300px; border-radius: 10px;"> -->
+                </div>
+                <div style="flex: 1; min-width: 250px;text-align: center;">
+                    <p style="color: gainsboro; text-align: center;">
+                        <a href="index.html" class="enlace-deco">Home</a>
+                    </p>
+                </div>
+                <div style="flex: 1; min-width: 250px;text-align: center;">
+                    <p style="color: gainsboro; text-align: center;">
+                        <a href="c1.html" class="enlace-deco">Hardware</a><br>
+                        <a href="c2.html" class="enlace-deco">Inteligencia Artificial</a><br>
+                        <a href="c3.html" class="enlace-deco">Software Revolucionario</a>
+                    </p>
+                </div>
+            
+            </div>
+    <hr>
+    <h6 align="right">© 2025 Cienfuture. All rights reserved.    
 </body>
 </html>
